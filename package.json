@@ -9,6 +9,7 @@
     "build": "esbuild ./src/* --bundle --sourcemap --minify --outdir=dist --watch",
     "format": "prettier src/*.ts -w"
   },
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/learyjk/dev-template.git"
@@ -20,9 +21,13 @@
   },
   "homepage": "https://github.com/learyjk/dev-template#readme",
   "devDependencies": {
+    "@types/node": "^18.11.18",
     "esbuild": "^0.15.14",
     "prettier": "^2.7.1",
     "serve": "^14.1.1",
     "typescript": "^4.9.3"
+  },
+  "dependencies": {
+    "paper": "^0.12.17"
   }
 }
