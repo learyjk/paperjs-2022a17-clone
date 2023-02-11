@@ -3,13 +3,13 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "serve": "serve",
+    "serve": "serve --cors",
     "build": "esbuild ./src/* --bundle --sourcemap --minify --outdir=dist --watch",
     "format": "prettier src/*.ts -w"
   },
-  "type": "module",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/learyjk/dev-template.git"
